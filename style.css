@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.portfolio {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.portfolioq-item {
+  display: flex;
+  margin-top: 20px;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioq-item.two > p {
+  padding: 10px;
+  margin: 10px;
+}
+.portfolioq-item.two > h3 {
+  padding: 6px;
+  margin: 2px;
+  color: rebeccapurple;
+}
+.portfolio-item {
+  background: rgb(10, 40, 58);
+  color: rgba(206, 83, 83, 0);
+  font-weight: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5em;
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}
+.portfolio-item.four {
+  grid-row: span 5;
+  grid-column: span 2;
+}
+.portfolio-item.three {
+  grid-row: span 5;
+  grid-column: span 2;
+}
+.portfolio-item.one {
+  grid-row: span 3;
+  grid-column: span 4;
+}
+.portfolioq-item.two {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.portfolio-item.five {
+  grid-row: span 2;
+  grid-column: span 4;
+}
+.portfolio-item.six {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.portfolio-item.seven {
+  grid-row: span 2;
+  grid-column: span 4;
+}
+.portfolio-item:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+.one {
+  background-image: url(one.png);
+}
+.three {
+  background-image: url(two.png);
+}
+.four {
+  background-image: url(three.png);
+}
+.five {
+  background-image: url(four.png);
+}
+.six {
+  background-image: url(five.png);
+}
+.seven {
+  background-image: url(six.png);
+}
+
+.one::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.one:hover::before {
+  opacity: 0.2;
+  transform: rotateY(180deg);
+  transition: 2s;
+}
+.one:hover {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.three:hover {
+  transition: 1s;
+
+  transform: rotateY(180deg);
+}
+.four:hover {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.five:hover {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.six:hover {
+  transition: 1s;
+  transform: rotateY(180deg);
+}
+.seven:hover {
+  transition: 1s;
+
+  transform: rotateY(180deg);
+}
+.three::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.three:hover::before {
+  opacity: 0.2;
+}
+.four::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.four:hover::before {
+  opacity: 0.2;
+}
+.five::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.five:hover::before {
+  opacity: 0.2;
+}
+.six::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.six:hover::before {
+  opacity: 0.2;
+}
+.seven::before {
+  content: "";
+  display: block;
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.seven:hover::before {
+  opacity: 0.2;
+}
